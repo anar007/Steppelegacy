@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="kk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5">
+<meta name="description" content="Steppe Legacy — People, Nature, Heritage">
+<title>Steppe Legacy</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="language-switch" aria-label="Language">
+<a href="index.html">EN</a>
+<a href="kz.html" class="active">KZ</a>
+</nav>
+<main class="page-shell">
+<img class="page-image" src="assets/steppe-legacy-kz.jpg" alt="Steppe Legacy" width="729" height="1600">
+</main>
+<script>
+document.documentElement.classList.add("js");
+window.addEventListener("DOMContentLoaded",function(){
+requestAnimationFrame(function(){
+document.querySelector(".page-shell")?.classList.add("is-visible");
+document.querySelector(".language-switch")?.classList.add("is-visible");
+});
+});
+</script>
+</body>
+</html>
