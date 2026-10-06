@@ -123,8 +123,8 @@ body{margin:0;background:#15130f;font-family:Georgia,"Times New Roman",serif}
   justify-content:flex-start;
   gap:clamp(5px,1.15vw,14px);
   padding:0 1.0%;
-  background:#173b63;
-  font-family:Georgia,"Times New Roman",serif;
+  background:#0b2239;
+  font-family:Arial,"Segoe UI",sans-serif;
   font-size:clamp(8px,1.05vw,14px);
   white-space:nowrap
 }
@@ -161,4 +161,14 @@ body{margin:0;background:#15130f;font-family:Georgia,"Times New Roman",serif}
     padding:0 .45%
   }
   .real-nav a{padding:.35em .08em}
+}
+
+.real-nav{
+  background:#071d33 !important;
+  color:#fff !important;
+}
+.real-nav a{
+  color:#fff !important;
+  font-family:Arial,"Segoe UI",sans-serif !important;
+  font-weight:600;
 }
