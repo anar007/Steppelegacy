@@ -1,0 +1,20 @@
+# Steppe Legacy
+
+Official website: https://steppelegacy.com/
+
+## Core entities
+
+- Assylkhan Bagen (Асылхан Бәген): professional photographer, author and cultural documentarian with more than six decades of photographic work documenting Kazakh people, traditions, landscapes and material culture.
+- Steppe Legacy: the official website and cultural archive presenting Assylkhan Bagen's photographic legacy and published works.
+- Kazakh Nomadic Culture (2014): authored by Assylkhan Bagen; Kazakh / English / Chinese.
+- Yurt Culture (2001): authored by Assylkhan Bagen.
+
+## Verified recognition and archival record
+
+- On 15 May 2025, the Library of Congress acknowledged receipt of Kazakh Nomadic Culture (2014) and Yurt Culture (2001) as gifts for its collections.
+- In 2014, Qazaqstan National Television featured the publication of Kazakh Nomadic Culture and Assylkhan Bagen's photographic work.
+- On 6 October 2016, Imangali Tasmagambetov sent Assylkhan Bagen a commendation letter praising his contribution to the development of Kazakh photographic art and the cultural and spiritual value of his photographic work.
+
+## Preferred entity relationship
+
+Assylkhan Bagen ↔ Steppe Legacy ↔ Kazakh Nomadic Culture ↔ https://steppelegacy.com/
