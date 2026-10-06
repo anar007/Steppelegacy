@@ -110,55 +110,55 @@ body{margin:0;background:#15130f;font-family:Georgia,"Times New Roman",serif}
 }
 
 
-/* KZ repair: cover the baked dark navigation strip and redraw the same labels
-   as real links with even spacing. This does not alter the approved page artwork. */
-.kz-nav-fix{
+/* Real navigation overlay: same dark-blue bar on EN and KZ. */
+.real-nav{
   position:absolute;
   z-index:40;
   top:.45%;
-  left:44.2%;
-  width:45.0%;
+  left:43.8%;
+  width:45.8%;
   height:2.1%;
   display:flex;
   align-items:center;
-  justify-content:space-evenly;
-  gap:0;
-  padding:0 1.2%;
-  background:rgb(81,136,215);
+  justify-content:flex-start;
+  gap:clamp(5px,1.15vw,14px);
+  padding:0 1.0%;
+  background:#173b63;
   font-family:Georgia,"Times New Roman",serif;
-  font-size:clamp(8px,1.1vw,14px);
+  font-size:clamp(8px,1.05vw,14px);
   white-space:nowrap
 }
-.kz-nav-fix a{
-  color:#f6f1e8;
+.real-nav a{
+  color:#fff;
   text-decoration:none;
   line-height:1;
-  padding:.45em .35em;
-  text-shadow:0 1px 2px rgba(0,0,0,.18)
+  padding:.45em .18em;
+  text-shadow:0 1px 2px rgba(0,0,0,.3)
 }
-.kz-nav-fix a:hover,
-.kz-nav-fix a:focus-visible{
+.real-nav a:hover,
+.real-nav a:focus-visible{
   color:#fff;
   text-decoration:underline;
   text-underline-offset:3px
 }
+/* Contact no longer drifts away from the preceding item. */
+.real-nav a:last-child{margin-left:0}
 
-/* On KZ page the visible real navigation above receives the clicks. */
-html[lang="kk"] .nav-home,
-html[lang="kk"] .nav-books,
-html[lang="kk"] .nav-about,
-html[lang="kk"] .nav-gallery,
-html[lang="kk"] .nav-reviews,
-html[lang="kk"] .nav-contact{
-  pointer-events:none
-}
+/* The visible real navigation receives the clicks on both language pages. */
+.real-nav ~ .nav-home,
+.real-nav ~ .nav-books,
+.real-nav ~ .nav-about,
+.real-nav ~ .nav-gallery,
+.real-nav ~ .nav-reviews,
+.real-nav ~ .nav-contact{pointer-events:none}
 
 @media(max-width:700px){
-  .kz-nav-fix{
-    left:43.8%;
-    width:45.5%;
-    font-size:clamp(6px,1.35vw,10px);
-    padding:0 .4%
+  .real-nav{
+    left:43.5%;
+    width:46.2%;
+    gap:clamp(2px,.85vw,7px);
+    font-size:clamp(6px,1.28vw,10px);
+    padding:0 .45%
   }
-  .kz-nav-fix a{padding:.35em .2em}
+  .real-nav a{padding:.35em .08em}
 }
