@@ -24,7 +24,7 @@ body{margin:0;background:#15130f;font-family:Georgia,"Times New Roman",serif}
 .anchor-about{top:25.9%}
 .anchor-gallery{top:37.8%}
 .anchor-books{top:52.5%}
-.anchor-shop{top:66.2%}
+.anchor-shop{top:84.0%}
 .anchor-reviews{top:87.2%}
 .anchor-contact{top:95.2%}
 
@@ -186,5 +186,96 @@ body{margin:0;background:#15130f;font-family:Georgia,"Times New Roman",serif}
   .language-switch a{
     padding:5px 7px !important;
     font-size:11px !important;
+  }
+}
+
+
+/* v8 — mobile language switch: move well below the top navigation */
+@media(max-width:700px){
+  .language-switch{
+    position:absolute !important;
+    top:135px !important;
+    right:12px !important;
+    padding:4px !important;
+    gap:3px !important;
+    z-index:120 !important;
+  }
+  .language-switch a{
+    padding:5px 7px !important;
+    font-size:11px !important;
+  }
+}
+
+/* v8 — Kazakh four-photo caption band rebuilt as real HTML.
+   It fully covers the baked caption area, so the old faint text cannot show through. */
+.kz-caption-overlay{
+  position:absolute;
+  z-index:35;
+  left:0;
+  top:48.45%;
+  width:100%;
+  height:4.55%;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  background:#161410;
+  color:#f7f2e8;
+  pointer-events:none;
+}
+.kz-cap{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:.35% 2%;
+  min-width:0;
+}
+.kz-cap strong{
+  display:block;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(13px,2.1vw,24px);
+  line-height:1.05;
+  font-weight:700;
+  margin-bottom:.45em;
+  white-space:nowrap;
+}
+.kz-cap span{
+  display:block;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(8px,1.02vw,13px);
+  line-height:1.24;
+  font-weight:700;
+  white-space:normal;
+}
+
+/* v8 — cover the old BEST VALUE badge and redraw a smaller centered one */
+.kz-best-value-fix{
+  position:absolute;
+  z-index:36;
+  top:68.38%;
+  left:75.35%;
+  width:11.7%;
+  height:1.28%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:999px;
+  background:#a86f22;
+  color:#fff5df;
+  font-family:Arial,"Segoe UI",sans-serif;
+  font-size:clamp(7px,.85vw,11px);
+  font-weight:700;
+  letter-spacing:.02em;
+  line-height:1;
+  pointer-events:none;
+  box-shadow:0 0 0 5px #eee2cc;
+}
+
+@media(max-width:700px){
+  .kz-cap strong{font-size:clamp(10px,2.25vw,16px)}
+  .kz-cap span{font-size:clamp(6px,1.45vw,10px);line-height:1.18}
+  .kz-best-value-fix{
+    font-size:clamp(6px,1.2vw,8px);
+    box-shadow:0 0 0 3px #eee2cc;
   }
 }
